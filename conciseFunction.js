@@ -24,3 +24,7 @@ console.log(bike.gear);
 
 const obj = () => "ahsan";
 console.log(obj);
+
+const stateHandler = (prevState) => ({
+  ...prevState,
+});

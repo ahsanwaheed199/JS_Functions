@@ -2,6 +2,11 @@ function multiply(a, b = 1) {
   return a * b;
 }
 
+function getChange({ final, init }) {
+  return final - init;
+}
+
+getChange({ init: 3, final: 4 });
 console.log(multiply(5, 2)); // expected output: 10
 
 console.log(multiply(5)); // expected output: 5
@@ -30,3 +35,10 @@ test(undefined); // 'number' (num is set to 1 too)
 // test with other falsy values:
 test(""); // 'string' (num is set to '')
 test(null); // 'object' (num is set to null)
+
+function getSum([a, b, c]) {
+  if (c) {
+    return a + b + c;
+  }
+  return a + b;
+}

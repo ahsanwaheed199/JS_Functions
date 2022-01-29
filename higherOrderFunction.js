@@ -25,3 +25,11 @@ console.log(nadd(4));
 // or we can also invoke by
 
 console.log(add(4)(6));
+
+const bike =
+  (gear,
+  () => {
+    return gear;
+  });
+
+console.log(bike(gear));
